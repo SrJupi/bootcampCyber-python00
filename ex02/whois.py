@@ -2,7 +2,7 @@ import sys
 
 try:
     assert len(sys.argv) <= 2, "More than one argument provided"
-    assert len(sys.argv) > 1, "Usage: python whois.py NUMBER"
+    assert len(sys.argv) > 1, "Usage: python whois.py INTEGER"
     try:
         num = int(sys.argv[1])
     except:
