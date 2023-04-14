@@ -31,7 +31,9 @@ punctuation and spaces in a given text.'''
 - {spaces} space(s)''')
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("ERROR!\nUsage: python count.py STRING")
-    else:
+    if len(sys.argv) > 2:
+        print("ERROR!")
+    elif (len(sys.argv) == 2):
         text_analyzer(sys.argv[1])
+    else:
+        text_analyzer()
